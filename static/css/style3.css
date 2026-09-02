@@ -1,0 +1,223 @@
+/********************* Connexion *********************/
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+}
+
+.login-box {
+    background-color: rgba(31, 31, 31, 0.925);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Limite la largeur de la boîte */
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box; /* Assure un bon calcul des espacements */
+}
+
+.login-box button {
+    padding: 10px 20px;
+    background-color: #faad02;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #faad02;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/********************* Inscription *********************/
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+}
+
+.register-box {
+    background-color: rgba(31, 31, 31, 0.925);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.register-box button {
+    padding: 10px 20px;
+    background-color: #faad02;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.signin-link {
+    margin-top: 20px;
+}
+
+.signin-link a {
+    color: #faad02;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+/********************* Contact *********************/
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/fd2.jpg');
+    background-position: center;
+}
+
+.contact-box {
+    background-color: rgba(31, 31, 31, 0.925);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Largeur ajustée pour le formulaire */
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box; /* Assure que les champs prennent en compte les bordures et marges */
+}
+
+.input-group textarea {
+    height: 150px; /* Augmente la hauteur de la zone de texte */
+    resize: vertical; /* Permet à l'utilisateur d'agrandir la zone de texte */
+}
+
+.contact-box button {
+    padding: 10px 20px;
+    background-color: #faad02;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-box button:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+}
+
+.login-box button:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+}
+
+.register-box button:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+}
