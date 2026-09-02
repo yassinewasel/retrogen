@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
             <ul>
                 <li class="active"><a href="./">Accueil</a></li>
                 <li><a href="./boutique">Boutique</a></li>
-                <li><a href="./apropos">Ã€ propos</a></li>
+                <li><a href="./apropos">À propos</a></li>
                 <li><a href="./contact">Nous contacter</a></li>
                 <li><a href="./login"><img src="{{ url_for('static', filename='images/user.svg') }}" alt="Mon compte"></a></li>
                 <li><a href="./panier"><img src="{{ url_for('static', filename='images/panier.svg') }}" alt="Panier"></a></li>
@@ -41,9 +41,9 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Le Retro Gaming <br> Dans Le Futur</h1>
-                <p>Plongez dans l'univers du rÃ©tro et redÃ©couvrez les classiques qui ont marquÃ© l'histoire de votre enfance.</p>
+                <p>Plongez dans l'univers du rétro et redécouvrez les classiques qui ont marqué l'histoire de votre enfance.</p>
                 <a href="#best-seller">
-                    <button class="discover-btn">DÃ©couvrir Maintenant</button>
+                    <button class="discover-btn">Découvrir Maintenant</button>
                 </a>
             </div>
             <div class="hero-image">
@@ -62,28 +62,28 @@
                 <img src="{{ url_for('static', filename='images/truck.png') }}" alt="Livraison Rapide">
                 <div>
                     <h3>Livraison Rapide & Gratuite</h3>
-                    <p>BÃ©nÃ©ficiez d'une livraison rapide et gratuite pour recevoir vos articles RetroGen en 4 Ã  5 jours.</p>
+                    <p>Bénéficiez d'une livraison rapide et gratuite pour recevoir vos articles RetroGen en 4 à 5 jours.</p>
                 </div>
             </div>
             <div class="choisir-item">
                 <img src="{{ url_for('static', filename='images/bag.png') }}" alt="Boutique En Ligne et Magasin">
                 <div>
                     <h3>Boutique En Ligne et Magasin</h3>
-                    <p>DÃ©couvrez notre vaste sÃ©lection de jeux et consoles rÃ©tro en ligne ou visitez notre magasin Ã  Paris pour une expÃ©rience d'achat personnalisÃ©e.</p>
+                    <p>Découvrez notre vaste sélection de jeux et consoles rétro en ligne ou visitez notre magasin à Paris pour une expérience d'achat personnalisée.</p>
                 </div>
             </div>
             <div class="choisir-item">
                 <img src="{{ url_for('static', filename='images/support.png') }}" alt="Support 24/7">
                 <div>
                     <h3>Support 24/7</h3>
-                    <p>Notre Ã©quipe de support client est disponible 24h/24 et 7j/7 pour rÃ©pondre Ã  toutes vos questions et vous offrir une assistance immÃ©diate.</p>
+                    <p>Notre équipe de support client est disponible 24h/24 et 7j/7 pour répondre à toutes vos questions et vous offrir une assistance immédiate.</p>
                 </div>
             </div>
             <div class="choisir-item">
                 <img src="{{ url_for('static', filename='images/return.png') }}" alt="Reprise De Vos Anciens Jeux">
                 <div>
                     <h3>Reprise De Vos Anciens Jeux</h3>
-                    <p>Nous proposons un service de reprise de vos anciens jeux, vous permettant de faire de la place pour de nouvelles dÃ©couvertes tout en gagnant de l'argent ou des crÃ©dits en magasin.</p>
+                    <p>Nous proposons un service de reprise de vos anciens jeux, vous permettant de faire de la place pour de nouvelles découvertes tout en gagnant de l'argent ou des crédits en magasin.</p>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
                         <a href="{{ url_for('produit', product_id=produit[0]) }}">
                             <img src="{{ url_for('static', filename=produit[5]) }}" alt="{{ produit[1] }}">
                             <h3>{{ produit[1] }}</h3>
-                            <p>{{ produit[3] }}â‚¬</p>
+                            <p>{{ produit[3] }}€</p>
                         </a>
                     </div>
                 {% endfor %}
@@ -112,22 +112,22 @@
     </div>
 </section>
 
-<!----------------------- ActualitÃ© ----------------------->
+<!----------------------- Actualité ----------------------->
 
     <section id="actualite" class="actualite-section">
-        <h2>L'ACTUALITÃ‰ GAMING</h2>
+        <h2>L'ACTUALITÉ GAMING</h2>
         <div class="actualite-content">
             <div class="actu-item">
                 <a href="https://www.minecraft.net/fr-fr/15th-anniversary">
                     <img src="{{ url_for('static', filename='images/actu/actu1.jpg') }}" alt="Actu 1">
-                    <h3>Minecraft fÃªte son 15e anniversaire !</h3>
+                    <h3>Minecraft fête son 15e anniversaire !</h3>
                 </a>
                 <p>par Louise Constant le 16 Mai 2024</p>
             </div>
             <div class="actu-item">
                 <a href="https://www.tomsguide.fr/gta-6-date-de-sortie-nouveautes-plateformes-ce-que-lon-sait/">
                     <img src="{{ url_for('static', filename='images/actu/actu2.jpg') }}" alt="Actu 2">
-                    <h3>La date de sortie de GTA IV a fuitÃ© !?</h3>
+                    <h3>La date de sortie de GTA IV a fuité !?</h3>
                 </a>
                 <p>par Matthieu Andrieu le 20 Mai 2024</p>
             </div>
@@ -149,7 +149,7 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="RetroGen Logo">
             </div>
             <div class="newsletter-content">
-                <h3>Inscrivez-vous Ã  notre newsletter</h3>
+                <h3>Inscrivez-vous à notre newsletter</h3>
                 <form action="#" method="post">
                     <input type="email" name="email" placeholder="Entrez votre email" required>
                     <button type="submit">Envoyer</button>
@@ -158,7 +158,7 @@
         </div>
         <div class="footer-brand">
             <h3 class="site-name">RetroGen<span>.</span></h3>
-            <p>Chez RetroGen, nous nous engageons Ã  fournir les meilleurs jeux vidÃ©o rÃ©tro. Nous sommes disponibles Ã  tout moment pour vous aider. <br>Rejoignez notre communautÃ© de passionnÃ©s pour redÃ©couvrir les classiques du passÃ©.</p>
+            <p>Chez RetroGen, nous nous engageons à fournir les meilleurs jeux vidéo rétro. Nous sommes disponibles à tout moment pour vous aider. <br>Rejoignez notre communauté de passionnés pour redécouvrir les classiques du passé.</p>
         </div>
         <div class="opening-hours">
             <h3>Horaires d'ouverture</h3>
@@ -173,13 +173,13 @@
                 </tr>
                 <tr>
                     <td>Dimanche :</td>
-                    <td>FermÃ©</td>
+                    <td>Fermé</td>
                 </tr>
             </table>
         </div>
 
         <div class="contact-info">
-            <h3>OÃ¹ nous trouver ?</h3>
+            <h3>Où nous trouver ?</h3>
             <p><i class="fas fa-location-dot"></i>  Boutique en ligne — France</p>
             <p><i class="fas fa-phone"></i>  Contact via le formulaire</p>
             <p><i class="far fa-envelope"></i>  Adresse de démonstration</p>
@@ -193,7 +193,7 @@
             <a href="#"><i class="fab fa-tiktok"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <p>&copy; 2025 RetroGen - Tous droits rÃ©servÃ©s.</p>
+        <p>&copy; 2025 RetroGen - Tous droits réservés.</p>
     </div>
     <button id="scrollToTopBtn" class="scroll-to-top">
         <i class="fas fa-chevron-up"></i>

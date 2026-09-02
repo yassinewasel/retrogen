@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
             <ul>
                 <li><a href="{{ url_for('index') }}">Accueil</a></li>
                 <li class="active"><a href="{{ url_for('boutique') }}">Boutique</a></li>
-                <li><a href="{{ url_for('apropos') }}">Ã€ propos</a></li>
+                <li><a href="{{ url_for('apropos') }}">À propos</a></li>
                 <li><a href="{{ url_for('contact') }}">Nous contacter</a></li>
                 <li><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='images/user.svg') }}" alt="Mon compte"></a></li>
                 <li><a href="{{ url_for('panier') }}"><img src="{{ url_for('static', filename='images/panier.svg') }}" alt="Panier"></a></li>
@@ -45,7 +45,7 @@
             </div>
             <div class="product-info">
                 <h1>{{ product[1] }}</h1>
-                <p class="price"><strong>Prix : </strong>{{ product[3] }}â‚¬</p>
+                <p class="price"><strong>Prix : </strong>{{ product[3] }}€</p>
                 <p class="description"><strong>Description : </strong>{{ product[4] }}</p>
                 {% if 'jeu' in product[2].lower() %}
                     <select id="console-type">
@@ -57,7 +57,7 @@
                         <option value="Nintendo GameCube">Nintendo GameCube</option>
                         <option value="Nintendo Wii">Nintendo Wii</option>
                         <option value="Xbox 360">Xbox 360</option>
-                        <option value="Xbox PremiÃ¨re Gen.">Xbox PremiÃ¨re Gen.</option>
+                        <option value="Xbox Première Gen.">Xbox Première Gen.</option>
                         <option value="PlayStation 1">PlayStation 1 - PS1</option>
                         <option value="PlayStation 2">PlayStation 2 - PS2</option>
                         <option value="PlayStation 3">PlayStation 3 - PS3</option>
@@ -74,17 +74,22 @@
         <h3>Commentaires</h3>        
         <div class="comment-wrapper">
             <div class="comment-form-column">
+                {% if 'username' in session %}
                 <form id="comment-form" action="{{ url_for('ajouter_commentaire_route', produit_id=product[0]) }}" method="POST">
-                    <textarea name="commentaire" placeholder="Ã‰crivez votre commentaire..." required></textarea>                    
+                    <textarea name="commentaire" placeholder="Écrivez votre commentaire..." required></textarea>                    
                     <div class="rating">
-                        <input type="radio" id="star1" name="note" value="1"><label for="star1">â˜…</label>
-                        <input type="radio" id="star2" name="note" value="2"><label for="star2">â˜…</label>
-                        <input type="radio" id="star3" name="note" value="3"><label for="star3">â˜…</label>
-                        <input type="radio" id="star4" name="note" value="4"><label for="star4">â˜…</label>
-                        <input type="radio" id="star5" name="note" value="5"><label for="star5">â˜…</label>
+                        <input type="radio" id="star1" name="note" value="1"><label for="star1">★</label>
+                        <input type="radio" id="star2" name="note" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star3" name="note" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star4" name="note" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star5" name="note" value="5"><label for="star5">★</label>
                     </div>
                     <button type="submit" class="comment-btn">Ajouter un commentaire</button>
                 </form>
+                {% else %}
+                    <p class="login-to-comment">Connectez-vous pour publier un commentaire et attribuer une note.</p>
+                    <a class="comment-btn comment-login-link" href="{{ url_for('login') }}">Se connecter</a>
+                {% endif %}
             </div>
     
             <div class="comment-list-column">
@@ -96,10 +101,10 @@
                                 <p>{{ commentaire }}</p>                            
                                 <div class="stars">
                                     {% for i in range(note) %}
-                                        <span class="star">â˜…</span>
+                                        <span class="star">★</span>
                                     {% endfor %}
                                     {% for i in range(5 - note) %}
-                                        <span class="star">â˜†</span>
+                                        <span class="star">☆</span>
                                     {% endfor %}
                                 </div>
                             </div>
@@ -121,7 +126,7 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="RetroGen Logo">
             </div>
             <div class="newsletter-content">
-                <h3>Inscrivez-vous Ã  notre newsletter</h3>
+                <h3>Inscrivez-vous à notre newsletter</h3>
                 <form action="#" method="post">
                     <input type="email" name="email" placeholder="Entrez votre email" required>
                     <button type="submit">Envoyer</button>
@@ -130,7 +135,7 @@
         </div>
         <div class="footer-brand">
             <h3 class="site-name">RetroGen<span>.</span></h3>
-            <p>Chez RetroGen, nous nous engageons Ã  fournir les meilleurs jeux vidÃ©o rÃ©tro. Nous sommes disponibles Ã  tout moment pour vous aider. <br>Rejoignez notre communautÃ© de passionnÃ©s pour redÃ©couvrir les classiques du passÃ©.</p>
+            <p>Chez RetroGen, nous nous engageons à fournir les meilleurs jeux vidéo rétro. Nous sommes disponibles à tout moment pour vous aider. <br>Rejoignez notre communauté de passionnés pour redécouvrir les classiques du passé.</p>
         </div>
         <div class="opening-hours">
             <h3>Horaires d'ouverture</h3>
@@ -145,13 +150,13 @@
                 </tr>
                 <tr>
                     <td>Dimanche :</td>
-                    <td>FermÃ©</td>
+                    <td>Fermé</td>
                 </tr>
             </table>
         </div>
 
         <div class="contact-info">
-            <h3>OÃ¹ nous trouver ?</h3>
+            <h3>Où nous trouver ?</h3>
             <p><i class="fas fa-location-dot"></i>  Boutique en ligne — France</p>
             <p><i class="fas fa-phone"></i>  Contact via le formulaire</p>
             <p><i class="far fa-envelope"></i>  Adresse de démonstration</p>
@@ -165,7 +170,7 @@
             <a href="#"><i class="fab fa-tiktok"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>            
         </div>
-        <p>&copy; 2025 RetroGen - Tous droits rÃ©servÃ©s.</p>
+        <p>&copy; 2025 RetroGen - Tous droits réservés.</p>
     </div>
     <button id="scrollToTopBtn" class="scroll-to-top">
         <i class="fas fa-chevron-up"></i>
