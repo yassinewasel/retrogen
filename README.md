@@ -27,4 +27,10 @@ Prototype pédagogique. Les écrans panier et paiement sont encore statiques ; l
 
 ## Captures
 
-Voir [`screenshots/README.md`](screenshots/README.md).
+| Accueil | Boutique |
+|---|---|
+| ![Accueil de RetroGen](screenshots/home.png) | ![Catalogue et filtres](screenshots/shop.png) |
+
+| Fiche produit | Connexion |
+|---|---|
+| ![Fiche produit](screenshots/product.png) | ![Page de connexion](screenshots/login.png) |
