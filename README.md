@@ -1,26 +1,30 @@
 # RetroGen
 
-RetroGen is a small French-language retro-gaming shop prototype built with Flask and SQLite. It was created as a high-school project to explore product catalogues, user accounts and product reviews.
+RetroGen est une boutique de jeux vidéo rétro réalisée en Flask et SQLite dans le cadre d’un projet scolaire. L’application propose un catalogue, des fiches produits et un parcours de compte utilisateur.
 
-## Features
+## Fonctionnalités
 
-- Home page and product catalogue backed by SQLite
-- Product detail pages with console selection
-- Registration and login with hashed passwords
-- Product comments and 1–5 star ratings
-- Search and category filtering in the shop
+- accueil et catalogue alimentés par SQLite ;
+- recherche et filtrage par catégorie ;
+- fiches produits avec choix de console ;
+- inscription, connexion et mots de passe hachés ;
+- commentaires et notes de 1 à 5 étoiles.
 
-## Run locally
+## Installation
 
-```bash
+```powershell
 python -m venv .venv
-.venv\Scripts\activate  # Windows
-pip install flask
+.\.venv\Scripts\Activate.ps1
+python -m pip install flask
 python flask_app.py
 ```
 
-Then open `http://127.0.0.1:5000`. The database is created and seeded on first import.
+Ouvrir ensuite `http://127.0.0.1:5000`. La base de démonstration est initialisée automatiquement et ignorée par Git pour ne pas publier de comptes locaux.
 
-## Notes
+## État du projet
 
-This is an educational prototype. The basket and checkout screens are currently presentation-only; production concerns such as CSRF protection, migrations and a real payment flow are outside the original scope.
+Prototype pédagogique. Les écrans panier et paiement sont encore statiques ; les protections d’un vrai commerce restent à ajouter.
+
+## Captures
+
+Voir [`screenshots/README.md`](screenshots/README.md).
