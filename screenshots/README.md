@@ -1,8 +1,8 @@
-# Screenshots
+# Captures de RetroGen
 
-Add captures from the running Flask application here (no database accounts or private contact data):
+Les images illustrent les principaux écrans de la boutique avec des données de démonstration :
 
-- `home.png` — home page and featured products
-- `shop.png` — catalogue with search/category filter
-- `product.png` — product detail and rating form
-- `login.png` — account flow with test data only
+- `home.png` : accueil et produits mis en avant ;
+- `shop.png` : catalogue avec recherche et filtre par catégorie ;
+- `product.png` : fiche produit et formulaire d'avis ;
+- `login.png` : parcours de compte avec données de test.
